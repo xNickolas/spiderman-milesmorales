@@ -85,6 +85,14 @@ p {
 
 .w-auto {
   width: auto;
+  cursor: pointer;
+}
+
+.w-auto:hover {
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .align-items-center {
@@ -299,6 +307,21 @@ header {
   max-width: 88px;
 }
 
+.logo svg {
+  cursor: pointer;
+}
+
+.logo svg path, .logo svg circle {
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.logo svg:hover path, .logo svg:hover circle {
+  fill: #B31317;
+  -webkit-transform: translate3d(0, -3px, 0);
+          transform: translate3d(0, -3px, 0);
+}
+
 .nav-link {
   display: inline-block;
   padding: 8px 16px;
@@ -379,8 +402,8 @@ header {
 
 .logo-spiderman {
   fill: transparent;
-  -webkit-animation: logo-spiderman 12s ease infinite alternate;
-          animation: logo-spiderman 12s ease infinite alternate;
+  -webkit-animation: logo-spiderman 7s ease infinite alternate;
+          animation: logo-spiderman 7s ease infinite alternate;
 }
 
 @-webkit-keyframes logo-spiderman {

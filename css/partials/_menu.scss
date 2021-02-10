@@ -33,6 +33,20 @@ header {
 
 .logo {
   max-width: 88px;
+
+  svg {
+    cursor: pointer;
+
+    path, circle {
+      transition: .7s ease;
+    }
+    &:hover {
+      path, circle {
+        fill: $red-dark;
+        transform: translate3d(0,-3px,0);
+      }
+    }
+  }
 }
 
 .nav-link {
